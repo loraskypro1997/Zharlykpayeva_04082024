@@ -38,52 +38,52 @@
 					"urlencoded": [
 						{
 							"key": "product_id",
-							"value": " 4131",
+							"value": "{{product_id}}",
 							"type": "text"
 						},
 						{
 							"key": "this_listId",
-							"value": " product_cart",
+							"value": "product_cart",
 							"type": "text"
 						},
 						{
 							"key": "parent_product",
-							"value": " 4131",
+							"value": "4131",
 							"type": "text"
 						},
 						{
 							"key": "LANG_key",
-							"value": " ru",
+							"value": "ru",
 							"type": "text"
 						},
 						{
 							"key": "S_wh",
-							"value": " 1",
+							"value": "1",
 							"type": "text"
 						},
 						{
 							"key": "S_CID",
-							"value": " b041a8a7c43d580fcba64f9023cfa3a1",
+							"value": "b041a8a7c43d580fcba64f9023cfa3a1",
 							"type": "text"
 						},
 						{
 							"key": "S_cur_code",
-							"value": " usd",
+							"value": "usd",
 							"type": "text"
 						},
 						{
 							"key": "S_koef",
-							"value": " 0.01441",
+							"value": "0.01441",
 							"type": "text"
 						},
 						{
 							"key": "quantity",
-							"value": " 1",
+							"value": "1",
 							"type": "text"
 						},
 						{
 							"key": "S_hint_code",
-							"value": " ",
+							"value": "",
 							"type": "text"
 						},
 						{
@@ -139,52 +139,52 @@
 					"urlencoded": [
 						{
 							"key": "product_id",
-							"value": " 4131",
+							"value": "{{product_id}}",
 							"type": "text"
 						},
 						{
 							"key": "this_listId",
-							"value": " product_cart",
+							"value": "product_cart",
 							"type": "text"
 						},
 						{
 							"key": "parent_product",
-							"value": " 4131",
+							"value": "4131",
 							"type": "text"
 						},
 						{
 							"key": "LANG_key",
-							"value": " ru",
+							"value": "ru",
 							"type": "text"
 						},
 						{
 							"key": "S_wh",
-							"value": " 1",
+							"value": "1",
 							"type": "text"
 						},
 						{
 							"key": "S_CID",
-							"value": " b041a8a7c43d580fcba64f9023cfa3a1",
+							"value": "b041a8a7c43d580fcba64f9023cfa3a1",
 							"type": "text"
 						},
 						{
 							"key": "S_cur_code",
-							"value": " usd",
+							"value": "usd",
 							"type": "text"
 						},
 						{
 							"key": "S_koef",
-							"value": " 0.01441",
+							"value": "0.01441",
 							"type": "text"
 						},
 						{
 							"key": "quantity",
-							"value": " 1",
+							"value": "1",
 							"type": "text"
 						},
 						{
 							"key": "S_hint_code",
-							"value": " ",
+							"value": "",
 							"type": "text"
 						},
 						{
@@ -233,42 +233,42 @@
 					"urlencoded": [
 						{
 							"key": "product_id",
-							"value": " 4131",
+							"value": "{{product_id}}",
 							"type": "text"
 						},
 						{
 							"key": "LANG_key",
-							"value": " ru",
+							"value": "ru",
 							"type": "text"
 						},
 						{
 							"key": "S_wh",
-							"value": " 1",
+							"value": "1",
 							"type": "text"
 						},
 						{
 							"key": "S_CID",
-							"value": " b041a8a7c43d580fcba64f9023cfa3a1",
+							"value": "b041a8a7c43d580fcba64f9023cfa3a1",
 							"type": "text"
 						},
 						{
 							"key": "S_cur_code",
-							"value": " usd",
+							"value": "usd",
 							"type": "text"
 						},
 						{
 							"key": "S_koef",
-							"value": " 0.01441",
+							"value": "0.01441",
 							"type": "text"
 						},
 						{
 							"key": "quantity",
-							"value": " 1",
+							"value": "1",
 							"type": "text"
 						},
 						{
 							"key": "S_hint_code",
-							"value": " ",
+							"value": "",
 							"type": "text"
 						},
 						{

@@ -1,7 +1,7 @@
 {
-	"id": "9ccd1dd7-998f-4096-b7dc-6a1e9d1fde0b",
+	"id": "e8b6e2f8-eecb-498e-bc86-aafa0bf8382e",
 	"name": "altaivita",
-	"timestamp": "2024-08-05T00:33:53.824Z",
+	"timestamp": "2024-08-05T00:39:50.639Z",
 	"collection_id": "8159451-48406271-cdba-48a6-aed1-bfff977ea8c3",
 	"folder_id": 0,
 	"environment_id": "8159451-8983abf0-85e0-4161-b7fe-b5a69088c920",
@@ -9,14 +9,14 @@
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2024-08-05T00:33:53.060Z",
+	"startedAt": "2024-08-05T00:39:49.933Z",
 	"totalFail": 0,
 	"results": [
 		{
 			"id": "a9f06327-7d9e-42ab-affd-a495e0a14179",
 			"name": "Add to Cart",
 			"url": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php",
-			"time": 218,
+			"time": 185,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -31,7 +31,7 @@
 				}
 			},
 			"times": [
-				218
+				185
 			],
 			"allTests": [
 				{
@@ -70,7 +70,7 @@
 			"id": "bc4e650a-648a-4def-939a-4b4238356b30",
 			"name": "Change quantity",
 			"url": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php",
-			"time": 158,
+			"time": 154,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -85,7 +85,7 @@
 				}
 			},
 			"times": [
-				158
+				154
 			],
 			"allTests": [
 				{
@@ -95,7 +95,7 @@
 		}
 	],
 	"count": 1,
-	"totalTime": 532,
+	"totalTime": 495,
 	"collection": {
 		"requests": [
 			{
