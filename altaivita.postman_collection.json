@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "48406271-cdba-48a6-aed1-bfff977ea8c3",
+		"name": "altaivita",
+		"description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Scripts\" tab**\n\nAdding tests to your requests can help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/fa30ea0a-373d-4545-a668-e7b283cca343/aW1hZ2UucG5n\" alt=\"\" height=\"1530\" width=\"2162\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n    \n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8159451"
+	},
+	"item": [
+		{
+			"name": "Add to Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=s1mjqnd3mq2tpjqahv34uaidf4; CID=b041a8a7c43d580fcba64f9023cfa3a1; site_countryID=445; site_country_name=%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8+%28%D0%A1%D0%A8%D0%90%29; _ga=GA1.1.1730252804.1722649302; _ym_uid=1722649302606643799; _ym_d=1722649302; _ym_visorc=w; _ym_isad=2; _ga_2JB65Y3D22=GS1.1.1722815692.2.1.1722816828.0.0.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_id",
+							"value": " 4131",
+							"type": "text"
+						},
+						{
+							"key": "this_listId",
+							"value": " product_cart",
+							"type": "text"
+						},
+						{
+							"key": "parent_product",
+							"value": " 4131",
+							"type": "text"
+						},
+						{
+							"key": "LANG_key",
+							"value": " ru",
+							"type": "text"
+						},
+						{
+							"key": "S_wh",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "S_CID",
+							"value": " b041a8a7c43d580fcba64f9023cfa3a1",
+							"type": "text"
+						},
+						{
+							"key": "S_cur_code",
+							"value": " usd",
+							"type": "text"
+						},
+						{
+							"key": "S_koef",
+							"value": " 0.01441",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "S_hint_code",
+							"value": " ",
+							"type": "text"
+						},
+						{
+							"key": "S_customerID",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/engine/cart/add_products_to_cart_from_preview.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					]
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=s1mjqnd3mq2tpjqahv34uaidf4; CID=b041a8a7c43d580fcba64f9023cfa3a1; site_countryID=445; site_country_name=%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8+%28%D0%A1%D0%A8%D0%90%29; _ga=GA1.1.1730252804.1722649302; _ym_uid=1722649302606643799; _ym_d=1722649302; _ym_visorc=w; _ym_isad=2; _ga_2JB65Y3D22=GS1.1.1722815692.2.1.1722816828.0.0.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_id",
+							"value": " 4131",
+							"type": "text"
+						},
+						{
+							"key": "this_listId",
+							"value": " product_cart",
+							"type": "text"
+						},
+						{
+							"key": "parent_product",
+							"value": " 4131",
+							"type": "text"
+						},
+						{
+							"key": "LANG_key",
+							"value": " ru",
+							"type": "text"
+						},
+						{
+							"key": "S_wh",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "S_CID",
+							"value": " b041a8a7c43d580fcba64f9023cfa3a1",
+							"type": "text"
+						},
+						{
+							"key": "S_cur_code",
+							"value": " usd",
+							"type": "text"
+						},
+						{
+							"key": "S_koef",
+							"value": " 0.01441",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "S_hint_code",
+							"value": " ",
+							"type": "text"
+						},
+						{
+							"key": "S_customerID",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/engine/cart/delete_products_from_cart_preview.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"delete_products_from_cart_preview.php"
+					]
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Change quantity",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_id",
+							"value": " 4131",
+							"type": "text"
+						},
+						{
+							"key": "LANG_key",
+							"value": " ru",
+							"type": "text"
+						},
+						{
+							"key": "S_wh",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "S_CID",
+							"value": " b041a8a7c43d580fcba64f9023cfa3a1",
+							"type": "text"
+						},
+						{
+							"key": "S_cur_code",
+							"value": " usd",
+							"type": "text"
+						},
+						{
+							"key": "S_koef",
+							"value": " 0.01441",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "S_hint_code",
+							"value": " ",
+							"type": "text"
+						},
+						{
+							"key": "S_customerID",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/engine/cart/add_products_to_cart_from_preview.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"engine",
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					]
+				},
+				"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1"
+		},
+		{
+			"key": "base_url",
+			"value": "https://postman-rest-api-learner.glitch.me/"
+		}
+	]
+}

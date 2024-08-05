@@ -1,0 +1,115 @@
+{
+	"id": "9ccd1dd7-998f-4096-b7dc-6a1e9d1fde0b",
+	"name": "altaivita",
+	"timestamp": "2024-08-05T00:33:53.824Z",
+	"collection_id": "8159451-48406271-cdba-48a6-aed1-bfff977ea8c3",
+	"folder_id": 0,
+	"environment_id": "8159451-8983abf0-85e0-4161-b7fe-b5a69088c920",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-05T00:33:53.060Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a9f06327-7d9e-42ab-affd-a495e0a14179",
+			"name": "Add to Cart",
+			"url": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php",
+			"time": 218,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				218
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "db58bc5c-263d-4ff8-aa6b-966273a72aa2",
+			"name": "Delete cart",
+			"url": "https://altaivita.ru/engine/cart/delete_products_from_cart_preview.php",
+			"time": 156,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				156
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "bc4e650a-648a-4def-939a-4b4238356b30",
+			"name": "Change quantity",
+			"url": "https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php",
+			"time": 158,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 532,
+	"collection": {
+		"requests": [
+			{
+				"id": "a9f06327-7d9e-42ab-affd-a495e0a14179",
+				"method": "POST"
+			},
+			{
+				"id": "db58bc5c-263d-4ff8-aa6b-966273a72aa2",
+				"method": "POST"
+			},
+			{
+				"id": "bc4e650a-648a-4def-939a-4b4238356b30",
+				"method": "POST"
+			}
+		]
+	}
+}
