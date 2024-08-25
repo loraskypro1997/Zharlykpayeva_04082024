@@ -68,7 +68,7 @@ def test_add_to_cart_ui(setup):
 
     # Проверка наличия товара в корзине
     try:
-        time.sleep(7)  # Ждём загрузки страницы
+        time.sleep(9)  # Ждём загрузки страницы
         cart_icon = driver.find_element(By.CLASS_NAME, "js-count-number")
         count_element = WebDriverWait(driver, 10).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, ".count.active.js-count-number"))
